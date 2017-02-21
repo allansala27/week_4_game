@@ -1,0 +1,38 @@
+body {
+	background-image: url("../images/background.jpeg");
+	background-size: cover;
+}
+
+header {
+	font-family: 'Berkshire Swash', cursive;
+	color: white;
+}
+
+#instructions {
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 20px;
+	color: white;
+}
+
+#target {
+	font-family: 'Berkshire Swash', cursive;
+	color: white;
+	float: left;
+
+}
+
+#win-loss-counter {
+	font-family: 'Berkshire Swash', cursive;
+	color: white;
+	float: left;
+}
+
+img {
+	height: 150px;
+	width: 150px;
+}
+
+#score {
+	font-family: 'Berkshire Swash', cursive;
+	color: white;
+}

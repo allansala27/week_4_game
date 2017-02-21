@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gems Collector</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="row">
+		<header>
+			<h1>Gems Collector</h1>
+		</header>
+	</div>
+	<div class="row">
+		<div id="instructions">
+			<p>
+				You will be given a random number at the start of the game.
+			</p>
+			<p>
+				There are four crystals below, clicking on each crystal will add value to your score.
+			</p>
+			<p>
+				Your goal is to match your score with the random number.
+			</p>
+			<p>
+				The values of the crystals are hidden from you until you click on it.
+			</p>
+			<p>
+				The values of the crystals will change every game! Good Luck!
+			</p>
+		</div>
+	</div>
+	<div class="row">	
+		<div class="col-lg-3">
+			<div id="target" class="container">
+				<h1>Target score: <span id="target-score"></span></h1>
+			</div>
+		</div>
+		<div class="col-lg-2">		
+			<div id="win-loss-counter" class="container">
+				<h2>Wins: <span id="win-counter">0</span></h2>
+				<h2>Losses: <span id="loss-counter">0</span></h2>
+			</div>
+		</div>	
+	</div>
+	<div class="row">
+		<div id="gems" class="col-lg-6">	
+			<div id="gem-1" class="col-lg-3">
+				<img src="assets/images/ruby.png">
+			</div>	
+			<div id="gem-2" class="col-lg-3">
+				<img src="assets/images/green.png">
+			</div>
+			<div id="gem-3" class="col-lg-3">
+				<img src="assets/images/blue.png">
+			</div>
+			<div id="gem-4" class="col/lg-3">
+				<img src="assets/images/yellow.png">
+			</div>
+		</div>
+	</div>	
+	<div class="row">	
+		<div id="score" class="container">
+			<h1>Your score is: <span id="current-score">0</span></h1>
+		</div>	
+	</div>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
