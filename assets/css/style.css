@@ -7,18 +7,21 @@ body {
 header {
 	font-family: 'Berkshire Swash', cursive;
 	color: white;
+	text-shadow: 5px 5px 10px black;
 }
 
 #instructions {
 	font-family: 'Berkshire Swash', cursive;
 	font-size: 20px;
 	color: white;
+	text-shadow: 5px 5px 10px black;
 }
 
 #target {
 	font-family: 'Berkshire Swash', cursive;
 	color: white;
 	float: left;
+	text-shadow: 5px 5px 10px black;
 
 }
 
@@ -26,6 +29,7 @@ header {
 	font-family: 'Berkshire Swash', cursive;
 	color: white;
 	float: left;
+	text-shadow: 5px 5px 10px black;
 }
 
 img {
@@ -36,4 +40,5 @@ img {
 #score {
 	font-family: 'Berkshire Swash', cursive;
 	color: white;
+	text-shadow: 5px 5px 10px black;
 }
