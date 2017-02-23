@@ -4,9 +4,6 @@ $(document).ready(function() {
 	var targetScore = Math.floor((Math.random() * 100) + 19);
 	$("#target-score").html(targetScore);
 
-	//array of possible gem values
-	// gemValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-
 	//create var to hold current score and initialize to 0
 	var currentScore = 0;
 
@@ -20,16 +17,19 @@ $(document).ready(function() {
 	var winCounter = 0;
 	var lossCounter = 0;
 
-	//newGame function
-	// function newGame () {
-	// 	currentScore = 0;
-	// 	targetScore = Math.floor((Math.random() * 100) + 19);
-	// 	$("#gem-1").attr("gem-value", gemValues[Math.floor(Math.random() * 12)]);
-	// 	$("#gem-2").attr("gem-value", gemValues[Math.floor(Math.random() * 12)]);
-	// 	$("#gem-3").attr("gem-value", gemValues[Math.floor(Math.random() * 12)]);
-	// 	$("#gem-4").attr("gem-value", gemValues[Math.floor(Math.random() * 12)]);
-	// }
+	//new game function
+	function newGame() {
+		targetScore = Math.floor((Math.random() * 100) + 19);
+		$("#target-score").html(targetScore);
+		
+		currentScore = 0;
+		$("#current-score").html(currentScore);
 
+		$("#gem-1").attr("gem-value", Math.floor((Math.random() * 12)+ 1));
+		$("#gem-2").attr("gem-value", Math.floor((Math.random() * 12)+ 1));
+		$("#gem-3").attr("gem-value", Math.floor((Math.random() * 12)+ 1));
+		$("#gem-4").attr("gem-value", Math.floor((Math.random() * 12)+ 1));
+	}
 
 	//on click function
 	$(".btn").on("click", function () {
@@ -46,15 +46,20 @@ $(document).ready(function() {
 
 		$("#current-score").html(currentScore);
 
+		//conditional statements to check for win or loss
 		if (currentScore === targetScore) {
-			alert("YOU WIN!");
 			winCounter ++;
-			// newGame();
+			$("#win-counter").html(winCounter);
+			var winSound = new Audio("assets/audio/Taric.joke10.ogx");
+			winSound.play();
+			newGame();
 		}
 		else if (currentScore >= targetScore) {
-			alert("YOU LOSE!");
 			lossCounter++;
-			// newGame();	
+			$("#loss-counter").html(lossCounter);
+			var loseSound = new Audio("assets/audio/Taric.attack1.ogx");
+			loseSound.play();
+			newGame();
 		}
 	});
 });
