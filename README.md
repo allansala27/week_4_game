@@ -1,50 +1,27 @@
 # HW - {week_4_game}
-(remove this before publishing) It is best to prefix your Homework Names so that you may easily filter them out later when you may have actual projects that you are working on. It also important to let employers know that this was only a hw assignment and not your personal work. (ex. hw_giph-tastic)
 
-## Live Link (If relevant)
- - www.example.com
+## Live Link
+ - https://allansala27.github.io/week_4_game
 
-## Description on how to use the app
+## Description
+#### To play the game, simply click on the gems to match the target value; winning or losing will give a new target value and change the values of each gem.
 
 ## Requirements
-#### Add a simple description of what the HW requirements were
-
-- Add bullets
-- Like this
-
-1. Or you can use numbered lists
-2. Like this
-	- You can also add a tab and a "-" to add a sub-bullet like this
-3. Make sure the requirements are understandable
+#### The assignment required making a game using jQuery to dynamically update my HTML page
 
 ## Technologies Used
-#### Use bullets to list out the technologies used. For example,
-- Jquery for Dom Manipulation
-- AJAX for API GET requests
+- HTML
+- CSS
+- jQuery
+- Javascript
 
 ## Code Explaination
-- Here, you can either provide a brief summary about your code and perhaps what you learned or you can go into specif detail about how you tackled certain tasks.
-- Use code snippets for placing example code and then describing it
-- Use subheaders to organize your thoughts
-- This is the most important part as it will show other what your code does with out having to download the code. 
-- In essense, this will also be a form of notes that you may later reference weeks later
+- First I created a variable to hold the value of the target value and printed it to my HTML
+- Then I created a variable to hold the current value the user has and initilized it to 0
+- Then I used jQuery to add value attributes to each of the gems
+- I created an on click method for the button classes to do several things:
+	- Pull the value from each gem
+	- Update the current score using the gem values
+	- Check if the user has won or lost the current game
+		- Start a new game whether the user has won or lost
 
--------------
-
-##Here is an example of what a Readme could look like:
-
-### AJAX Request to Giphy (Example)
-I created a function that allowed me to make an AJAX request to the Giphy API and then allowed me to pass through a callback function in order to further process the JSON object that was returned. 
-
-```
-var settings = {
-  "url": "http://api.giphy.com/v1/gifs/search?q=funny%20cat&api_key=dc6zaTOxFJmzC",
-  "method": "GET"
-  }
-}
-function getGiphyList(cb){
-	$.ajax(settings).done(function (response) {
-	  cb(response)
-	});
-}
-```
